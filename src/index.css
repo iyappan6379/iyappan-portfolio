@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@theme {
+  --color-ink: #080808;
+  --color-panel: #111111;
+  --color-muted: #a1a1aa;
+  --color-burgundy: #8f1748;
+  --color-electric: #477bff;
+  --font-display: "Syne", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+html { scroll-behavior: smooth; }
+body { background: #080808; color: #fff; font-family: var(--font-body); overflow-x: hidden; }
+::selection { background: #8f1748; color: #fff; }
+.grad-text { background: linear-gradient(92deg, #ff5c8a, #8f1748 35%, #477bff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.glass { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); backdrop-filter: blur(14px); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } html { scroll-behavior: auto; } }
+@media (hover:hover) and (pointer:fine) { .cursor-none-desktop, .cursor-none-desktop a, .cursor-none-desktop button { cursor: none; } }

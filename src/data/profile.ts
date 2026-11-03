@@ -1,8 +1,7 @@
 export const profile = {
   name: "IYAPPAN S.",
   roles: "Forward Deployed Engineer | AI Integration Engineer | Full Stack Developer | DevOps Engineer",
-  email: "iyappan0638@gmail.com",
-  phone: "+91 63797 83267",
+  email: "iyappan3680@gmail.com",
   location: "Bengaluru, Karnataka, India",
   linkedin: "https://www.linkedin.com/in/iyappan-s0511/",
   github: "https://github.com/iyappan6379",

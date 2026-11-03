@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Reveal, { SectionHeading } from "./Reveal";
 import { profile } from "../data/profile";
-import { Mail, Phone, Download, Send } from "lucide-react";
+import { Download, Send } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./BrandIcons";
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
@@ -20,8 +20,6 @@ export default function Contact() {
           <Reveal delay={0.1}>
             <p className="mt-6 text-[#a1a1aa] max-w-md leading-relaxed">Have a project, an interesting opportunity, or a challenging problem? Let's connect and create something meaningful.</p>
             <ul className="mt-9 space-y-4 text-[15px]">
-              <li><a className="inline-flex gap-3 items-center hover:text-[#477bff] transition" href={`mailto:${profile.email}`}><Mail size={18} /> {profile.email}</a></li>
-              <li><a className="inline-flex gap-3 items-center hover:text-[#477bff] transition" href={`tel:${profile.phone.replace(/\s/g, "")}`}><Phone size={18} /> {profile.phone}</a></li>
               <li><a className="inline-flex gap-3 items-center hover:text-[#477bff] transition" href={profile.linkedin} target="_blank" rel="noreferrer"><LinkedinIcon /> linkedin.com/in/iyappan-s0511</a></li>
               <li><a className="inline-flex gap-3 items-center hover:text-[#477bff] transition" href={profile.github} target="_blank" rel="noreferrer"><GithubIcon /> github.com/iyappan6379</a></li>
             </ul>
